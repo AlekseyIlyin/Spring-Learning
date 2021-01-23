@@ -1,14 +1,11 @@
-package org.ilin.springcourse;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+package org.ilin.learn;
 
 //@Component
 public class Computer {
     private int id;
-    private MusicPlayer musicPlayer;
+    private org.ilin.learn.MusicPlayer musicPlayer;
 
-    public Computer(MusicPlayer musicPlayer) {
+    public Computer(org.ilin.learn.MusicPlayer musicPlayer) {
         this.id = 1;
         this.musicPlayer = musicPlayer;
     }

@@ -1,4 +1,4 @@
-package org.ilyin.springcourse.config;
+package org.ilin.learn.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -13,7 +13,7 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
-@ComponentScan("org.ilyin.springcourse")
+@ComponentScan("org.ilin.learn")
 @EnableWebMvc
 public class SpringConfig implements WebMvcConfigurer {
 

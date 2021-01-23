@@ -1,6 +1,4 @@
-package org.ilin.springcourse;
-
-import org.springframework.stereotype.Component;
+package org.ilin.learn;
 
 public class RockMusic implements Music {
     @Override

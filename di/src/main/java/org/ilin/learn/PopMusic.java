@@ -3,26 +3,18 @@ package org.ilin.learn;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 
 @Component
-public class ClassicalMusic implements Music {
-
-    public ClassicalMusic() {}
+public class PopMusic implements Music {
 
     @PostConstruct
-    private void doMyInit() {
+    private void init() {
         System.out.println("do PostConstruct" + this.getClass().getName());
-    }
-
-    @PreDestroy
-    private void doMyDestroy() {
-        System.out.println("do PreDestroy " + this.getClass().getName());
     }
 
     @Override
     public String getSong() {
-        return "Hungarian Rhapsody";
+        return "Wind cries Mary";
     }
 
     @Override
